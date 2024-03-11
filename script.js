@@ -5,6 +5,7 @@ function validateSyntax() {
     let error = '';
 
     // TODO: Write your validation logic here
+    // Check if input starts with 'pet_' and followed by alphanumeric characters
     if(input.length === 0){return;}
 
     const pCharFind = /[p]/g,
@@ -32,26 +33,25 @@ function validateSyntax() {
             error = `"${yearChar}" must be a number.`;
         }
         else if(!capCharFInd.test(nameCapChar)){
-            error = `${nameCapChar} must be capitalized.`;
+            error = (nameCapChar === '')? `Pet's name must be entered.` :`${nameCapChar} must be capitalized.`;
         }
     } 
     else {
         const codeSyntax = prefixReg.test(petValue) && yearRegex.test(yearValue) && nameRegex.test(nameValue);
         if(!codeSyntax){
             if(!prefixReg.test(petValue)){
-                error = `Code must start with pet_`;
+                error = `Code must start with "pet_".`;
             }
             else if(!yearRegex.test(yearValue)) {
                 error = `"${yearValue}" must be a year`;
             }
             else if(!nameRegex.test(nameValue)){
-                error = `${nameValue} must be a Pet's Name`;
+                error = `${nameValue} must be a Pet's Name with capitalized "${nameCapChar}"`;
             }
         }
     }
 
     result = (error !== '')? error : input;
-    // Check if input starts with 'pet_' and followed by alphanumeric characters
 
     document.getElementById('result').innerText = result;
 }
