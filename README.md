@@ -12,7 +12,7 @@ Providing basic syntax validation for user-entered pet code in "pet_<YEAR><PET_N
 * Checks if the input follows a specific format likely resembling "pet_<YEAR><PET_NAME>";
 * Validates the presence of the prefix "pet_";
 * Validates the year format (starting with 19 or 20 followed by two digits between 1900 and 2099);
-* Validates the pet name format (starting with an uppercase letter, containing only letters);
+* Validates the pet name format (starting with an uppercase letter, and many contain letters and numbers);
 * Provides informative feedback through a displayed message ("Valid Syntax" or "Invalid Syntax");
 * Updates the validation status visually using CSS classes ("valid" or "invalid");
 
