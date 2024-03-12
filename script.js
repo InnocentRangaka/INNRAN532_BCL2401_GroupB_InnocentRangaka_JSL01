@@ -1,6 +1,7 @@
 function validateSyntax() {
     let input = document.getElementById('petInput').value,
     // Validation logic goes here
+    
     result = '', // Placeholder for validation result
     statusClass = '', // Placeholder for validation status
     removeClass = '', // Placeholder for class to be removed
