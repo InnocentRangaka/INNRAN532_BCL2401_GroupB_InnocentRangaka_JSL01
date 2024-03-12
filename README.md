@@ -4,7 +4,7 @@
 
 Providing basic syntax validation for user-entered pet code in "pet_<YEAR><PET_NAME>" format using regular expressions to validate different parts of the pet code format. Based on combined prefix, year, and pet name validations, suitable text messages and CSS classes get assigned for the overall outcome.
 
-![Syntax Validation Result](jsl_01_final_result2.gif)
+![Syntax Validation Result](jsl_01_final_result.gif)
 
 ## Functionality
 
