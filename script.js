@@ -19,7 +19,7 @@ function validateSyntax() {
 
     // Validation result and the classes assignment based on the input and validation status
     // Checks if the codeSyntax variable is false or the user input length is zero (empty input)
-    result = (!validationStatus)? 'Invalid Syntax' : 'Valid Syntax'; // Sets validation result to "Invalid Syntax", otherwise set it to "Valid Syntax".
+    result = (!validationStatus)? 'Invalid Syntax 🔴' : 'Valid Syntax 🟢'; // Sets validation result to "Invalid Syntax", otherwise set it to "Valid Syntax".
     statusClass = (!validationStatus)? 'invalid' : 'valid'; // Sets validation class to "invalid", otherwise set it to "valid".
     removeClass = (!validationStatus)? 'valid' : 'invalid'; // Sets class to be removed to "valid", otherwise set it to "invalid".
 
